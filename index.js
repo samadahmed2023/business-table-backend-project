@@ -1,4 +1,5 @@
 const app=require("./app");
-app.listen(5090,function () {
+const port=5090
+app.listen(port,function () {
     console.log("App Run @5090")
 })
