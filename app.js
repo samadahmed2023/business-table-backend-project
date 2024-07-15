@@ -62,9 +62,9 @@ app.use("/api/v1",router)
 
 
 
-// Add React Front End Routing
-app.get('*',function (req,res) {
-    res.sendFile(path.resolve(__dirname,'business-table-front','build','index.html'))
+// Undefined Route Implement
+app.use("*",(req,res)=>{
+    res.status(404).json({status:"fail",data:"Not Found"})
 })
 
 
